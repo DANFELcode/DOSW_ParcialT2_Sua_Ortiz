@@ -7,4 +7,4 @@
 
 ## Diagrama Entidad-Relación
 
-![Diagrama Entidad-Relacion](C:\Users\david.osalcedo\DOSW_ParcialT2_Sua_Ortiz\src\main\resources\docs\uml\diagram_er.png)
+![Diagrama Entidad-Relacion](src/main/resources/docs/uml/diagram_er.png)
