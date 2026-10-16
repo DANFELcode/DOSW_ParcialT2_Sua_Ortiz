@@ -2,7 +2,7 @@ package edu.dosw.parcial.model;
 
 import java.util.List;
 
-public class TutorModel {
+public class TutorEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

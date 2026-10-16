@@ -2,7 +2,7 @@ package edu.dosw.parcial.model;
 
 import java.util.List;
 
-public class SolicitanteModel {
+public class SolicitanteEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -16,9 +16,9 @@ public class SolicitanteModel {
     @Column(nullable = false)
     private List<String> materiasInscritas;
 
-    public SolicitanteModel() {
+    public SolicitanteEntity() {
     }
-    public SolicitanteModel(String correoInstitucional,
+    public SolicitanteEntity(String correoInstitucional,
                             boolean activo, List<String> materiasInscritas) {
         this.correoInstitucional = correoInstitucional;
         this.activo = activo;

@@ -3,8 +3,7 @@ package edu.dosw.parcial.model;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-public class DisponibilidadModel {
-
+public class DisponibilidadEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -23,14 +22,13 @@ public class DisponibilidadModel {
     private String materia;
     @Column(nullable = false)
     private EstadoDisponibilidad estado;
-    public DisponibilidadModel() {
+    public DisponibilidadEntity() {
     }
 
-    public DisponibilidadModel(Long id, LocalDate fecha, LocalTime horaInicio,
+    public DisponibilidadEntity(LocalDate fecha, LocalTime horaInicio,
                                LocalTime horaFin, String lugar,
                                Modalidad modalidad, String materia,
                                EstadoDisponibilidad estado) {
-        this.id = id;
         this.fecha = fecha;
         this.horaInicio = horaInicio;
         this.horaFin = horaFin;

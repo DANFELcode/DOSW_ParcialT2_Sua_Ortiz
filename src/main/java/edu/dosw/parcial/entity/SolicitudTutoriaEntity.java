@@ -2,7 +2,7 @@ package edu.dosw.parcial.model;
 
 import java.time.LocalDateTime;
 
-public class SolicitudTutoriaModel {
+public class SolicitudTutoriaEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -15,11 +15,10 @@ public class SolicitudTutoriaModel {
     private EstadoSolicitud estado;
     @Column(nullable = false)
     private LocalDateTime fechaCreacion;
-    public SolicitudTutoriaModel() {
+    public SolicitudTutoriaEntity() {
     }
-    public SolicitudTutoriaModel(Long id, String correoSolicitante, LocalDateTime disponibilidad,
+    public SolicitudTutoriaEntity(String correoSolicitante, LocalDateTime disponibilidad,
                                  EstadoSolicitud estado, LocalDateTime fechaCreacion) {
-        this.id = id;
         this.correoSolicitante = correoSolicitante;
         this.disponibilidad = disponibilidad;
         this.estado = estado;

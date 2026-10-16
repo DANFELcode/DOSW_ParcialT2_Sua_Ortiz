@@ -3,7 +3,7 @@ package edu.dosw.parcial.model;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-public class TutoriaModel {
+public class TutoriaEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -30,15 +30,14 @@ public class TutoriaModel {
     private SolicitanteModel solicitante;
     @Column(nullable = false)
 
-    public TutoriaModel() {
+    public TutoriaEntity() {
     }
 
-    public TutoriaModel(Long id, String tema, LocalDate fecha,
+    public TutoriaEntity(String tema, LocalDate fecha,
                         LocalTime horaInicio, LocalTime horaFin,
                         String lugar, Modalidad modalidad,
                         String materia, EstadoTutoria estado, TutorModel tutor,
                         SolicitanteModel solicitante){
-        this.id = id;
         this.tema = tema;
         this.fecha = fecha;
         this.horaInicio = horaInicio;

@@ -1,11 +1,11 @@
-package edu.dosw.parcial.model;
+package edu.dosw.parcial.entity;
+
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
-import java.math.BigDecimal;
 
 @Entity
 @Table(name = "administrator")
-public class AdministradorModel {
+public class AdministradorEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
