@@ -9,6 +9,5 @@
 
 ![Diagrama Entidad-Relacion](src/main/resources/docs/uml/diagram_er.png)
 
-
 ## Diagrama Clases
 ![Diagrama Clases](src/main/resources/docs/uml/class-diagram.png)
